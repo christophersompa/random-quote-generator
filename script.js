@@ -7,7 +7,6 @@ let quotes =
 ];
 
 document.getElementById('random-quote').innerHTML = '';
-
 document.getElementById('show-quote').addEventListener('click', function ()
 {
     let rand = Math.floor(Math.random() * quotes.length);
@@ -19,7 +18,6 @@ document.getElementById('add-quote').addEventListener('click', function()
 {
     function userInput(){
         let input = prompt("Enter new quote:");
-
         if(input == null || input == "")
         {
             alert("Please enter a quote!");
