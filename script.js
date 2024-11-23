@@ -12,6 +12,7 @@ document.getElementById('show-quote').addEventListener('click', function ()
 {
     let rand = Math.floor(Math.random() * quotes.length);
     document.getElementById('random-quote').innerHTML = "\'" + quotes[rand] + "\'";
+    document.getElementById('random-quote').style.fontStyle = "italic";
 });
 
 document.getElementById('add-quote').addEventListener('click', function()
